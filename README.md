@@ -2,7 +2,7 @@
 
 ***Ce programme est réalisé dans le cadre d'un projet en Numérique et Sciences Informatique (NSI) en classe de Terminale***
 
-Objectif : creer un jeu à choix multiple
+_Objectif : creer un jeu à choix multiple_
 
 ---Condition---
 * Il doit s'agire d'un programme codé en python
