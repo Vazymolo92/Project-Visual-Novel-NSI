@@ -33,20 +33,34 @@ class ArbreBinaire:
         return self.enfant_gauche
     
 #arbre = ["Storyline","choixA","choixB",["storyA","choixC","ChoixD"],["storyB","choixE","ChoixF"]
-"""def creation():
-    arbre = ArbreBinaire("Storyline")
-    arbre.insert_gauche("ChoixA")
-    arbre.insert_droit(("ChoixB")
-    return arbre
 
-arbuste = creation()"""
+arbuste = ArbreBinaire('A')
+arbuste.insert_gauche('B')
+arbuste.insert_droit('F')
 
+B_node = arbuste.get_gauche() # on defini le noeud B et ses enfants
+B_node.insert_gauche('C')
+B_node.insert_droit('D')
+
+C_node = B_node.get_gauche() # on defini le noeud C et son enfants
+C_node.insert_droit('E')
+
+F_node = arbuste.get_droit() # on defini le noeud F et ses enfants
+F_node.insert_gauche('G')
+F_node.insert_droit('H')
+
+G_node = F_node.get_gauche() # on defini le noeud G et son enfants
+G_node.insert_gauche('I')
+
+H_node = F_node.get_droit() # on defini le noeud H et son enfants
+H_node.insert_droit('J')
 
 
 window = Tk()
 window.title("Jeu a Choix")
 window.geometry("540x720")
 
+                     
 global storyline
 storyline = StringVar()
 Label(window, textvariable=storyline,pady=10).pack()
@@ -76,6 +90,7 @@ def choiceB():
     btnA.destroy()
     btnB.destroy()
     button_maker(arbuste.get_gauche, arbuste.get_droit)
+    
+button_maker(arbuste.get_gauche, arbuste.get_droit)
 
-#button_maker(arbre[1], arbre[2])
 window.mainloop()
