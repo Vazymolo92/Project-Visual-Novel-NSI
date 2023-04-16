@@ -13,4 +13,4 @@ Objectif : creer un jeu à choix multiple
 * Amine et Billy partent effectuer une op NordVPN en pologne durant la seconde guerre mondiale cependant tout ne se passe pas comme prévu...
 
 ***Disclaimer***
-* Les backgrounds du jeux appartiennent à la licence "Advance Wars - Days of Ruin" dont le titulaire est Nintendo.
+* Les assets du jeux appartiennent à la licence "Advance Wars - Days of Ruin" dont le titulaire est Nintendo.
